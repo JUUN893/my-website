@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>893メンバー紹介</title>
   <style>
-    body {
-      font-family: sans-serif;
+    html, body {
+      height: 100%;
       margin: 0;
       padding: 2em;
-
-      /* ここで背景画像設定 */
       background-image: url('background.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-
-      /* 背景が濃い場合は文字色を白に */
       color: white;
+      font-family: sans-serif;
     }
     h1 {
       text-align: center;
@@ -29,13 +26,14 @@
       gap: 1.5em;
     }
     .card {
-      background: rgba(255, 255, 255, 0.9); /* 背景白の透明度付け */
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(6px);
       border-radius: 12px;
       width: 250px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
       padding: 1.5em;
       text-align: center;
-      color: #333; /* カード内は文字を黒っぽく */
+      color: white;
     }
     .card img {
       width: 120px;
@@ -50,16 +48,11 @@
     }
     .bio {
       font-size: 0.9em;
-      color: #666;
       margin: 0.5em 0;
-    }
-    .social {
-      height: 1em;
     }
     .link-banner {
       margin-top: 3em;
       text-align: center;
-      color: white;
     }
     .link-banner a {
       background-color: #5865F2;
@@ -75,50 +68,50 @@
     .link-banner a:hover {
       background-color: #4752C4;
     }
+    .credit {
+      position: fixed;
+      bottom: 10px;
+      right: 15px;
+      font-size: 0.9em;
+      color: white;
+      opacity: 0.8;
+    }
   </style>
 </head>
 <body>
   <h1>893 メンバー紹介</h1>
   <div class="container">
     <div class="card">
-      <img src="img1.jpg" alt="じゅん893" />
+      <img src="img1.jpg" alt="じゅん893">
       <div class="name">じゅん893</div>
       <div class="bio">893</div>
-      <div class="social"></div>
     </div>
-    
     <div class="card">
-      <img src="img2.jpg" alt="ダイヤ893" />
+      <img src="img2.jpg" alt="ダイヤ893">
       <div class="name">ダイヤ893</div>
       <div class="bio">893</div>
-      <div class="social"></div>
     </div>
-    
     <div class="card">
-      <img src="img3.jpg" alt="なま893" />
+      <img src="img3.jpg" alt="なま893">
       <div class="name">なま893</div>
       <div class="bio">893</div>
-      <div class="social"></div>
     </div>
-    
     <div class="card">
-      <img src="img4.jpg" alt="コスモ893" />
+      <img src="img4.jpg" alt="コスモ893">
       <div class="name">コスモ893</div>
       <div class="bio">893</div>
-      <div class="social"></div>
     </div>
-    
     <div class="card">
-      <img src="img5.jpg" alt="きつね893" />
+      <img src="img5.jpg" alt="きつね893">
       <div class="name">きつね893</div>
       <div class="bio">893</div>
-      <div class="social"></div>
     </div>
   </div>
   <div class="link-banner">
     <p>もっと知りたい？気軽に話そう！</p>
-    <a href="https://discord.gg/nWm56xHqAZ" target="_blank" rel="noopener noreferrer">🎮 Discord サーバーに参加する！</a>
-    <a href="https://drive.google.com/drive/folders/1I4NlZY288FprfXZqRDPloNjo4FO_4dnJ" target="_blank" rel="noopener noreferrer">📁 893 V5 Minecraft を見る</a>
+    <a href="https://discord.gg/nWm56xHqAZ" target="_blank">🎮 Discord サーバーに参加する！</a>
+    <a href="https://drive.google.com/drive/folders/1I4NlZY288FprfXZqRDPloNjo4FO_4dnJ" target="_blank">📁 893 V5 Minecraft を見る</a>
   </div>
+  <div class="credit">Coding By JUUN</div>
 </body>
 </html>
